@@ -8,16 +8,12 @@
 
 import Foundation
 
-
-
-
 class Player {
-    var first_name:String = String()
-    var last_name:String = String()
-    var team = [String]()
+    var first_name:String? = String()
+    var last_name:String? = String()
+    var team = [String?]()
     var position = String()
     var carearStats = [Stats]();
     init(first_name:String?,last_name:String?,team:String?,postion:String?,carearStats:Stats?){
-        
     }
 }
