@@ -13,6 +13,8 @@
 		F5D64CD51AE9460300EC188C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D64CD41AE9460300EC188C /* Images.xcassets */; };
 		F5D64CD81AE9460300EC188C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5D64CD61AE9460300EC188C /* LaunchScreen.xib */; };
 		F5D64CE41AE9460300EC188C /* SwiftProject1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D64CE31AE9460300EC188C /* SwiftProject1Tests.swift */; };
+		F5D64CEE1AE946EB00EC188C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D64CED1AE946EB00EC188C /* Player.swift */; };
+		F5D64CF01AE9499400EC188C /* BasicStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D64CEF1AE9499300EC188C /* BasicStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		F5D64CDD1AE9460300EC188C /* SwiftProject1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProject1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D64CE21AE9460300EC188C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5D64CE31AE9460300EC188C /* SwiftProject1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProject1Tests.swift; sourceTree = "<group>"; };
+		F5D64CED1AE946EB00EC188C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F5D64CEF1AE9499300EC188C /* BasicStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				F5D64CCD1AE9460300EC188C /* AppDelegate.swift */,
 				F5D64CCF1AE9460300EC188C /* ViewController.swift */,
+				F5D64CED1AE946EB00EC188C /* Player.swift */,
+				F5D64CEF1AE9499300EC188C /* BasicStats.swift */,
 				F5D64CD11AE9460300EC188C /* Main.storyboard */,
 				F5D64CD41AE9460300EC188C /* Images.xcassets */,
 				F5D64CD61AE9460300EC188C /* LaunchScreen.xib */,
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					F5D64CC71AE9460300EC188C = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 68R8ML9VJV;
 					};
 					F5D64CDC1AE9460300EC188C = {
 						CreatedOnToolsVersion = 6.2;
@@ -212,7 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D64CF01AE9499400EC188C /* BasicStats.swift in Sources */,
 				F5D64CD01AE9460300EC188C /* ViewController.swift in Sources */,
+				F5D64CEE1AE946EB00EC188C /* Player.swift in Sources */,
 				F5D64CCE1AE9460300EC188C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwiftProject1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwiftProject1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
