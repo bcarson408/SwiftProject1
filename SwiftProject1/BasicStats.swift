@@ -8,12 +8,33 @@
 
 import Foundation
 
-class Stats {
-    let statYear:Int = 0;
-    let gamesPlayed:Int = 0;
-    let gamesStarted:Int = 0;
-    //    let comp:Int;
-    //    let attempts:Int;
-    //    let yards:Int;
-    //    let td:Int;
+struct Stats {
+    
+    var statYear:Int = 0
+    var gamesPlayed:Int = 0
+    var gamesStarted:Int = 0
+    var statsData:[String:AnyObject]?
+    var someStats = []
+ 
+    
+    func createPositionStat(type:String,comp:Int,attemps:Int, yards:Double, touchdowns:Int, Interceptions:Int) -> [String:AnyObject] {
+        
+        if var newStat = statsData {
+            
+        } else {
+            
+        }
+        var newStat = [String:AnyObject]()
+        newStat["type"] = "Quarterback"
+        newStat["comp"] = comp
+        newStat["attempts"] = attemps
+        newStat["yards"] = yards
+        
+        
+        return newStat
+        
+        
+    }
 }
+
+

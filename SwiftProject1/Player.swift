@@ -15,5 +15,12 @@ class Player {
     var position = String()
     var carearStats = [Stats]();
     init(first_name:String?,last_name:String?,team:String?,postion:String?,carearStats:Stats?){
+        if let self.first_name = first_name {
+            self.first_name = first_name
+        } else {
+            self.first_name = "first name"
+        }
+        self.last_name = last_name
+       
     }
 }
